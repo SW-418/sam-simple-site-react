@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: #f36d00
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  color: #fe8f34
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome-appear {
+  opacity: 0.001;
+}
+
+.welcome-appear.welcome-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.welcome-name-appear {
+  opacity: 0.001;
+}
+
+.welcome-name-appear.welcome-name-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  transition-delay: 1s;
+}
+
+#welcome-text {
+  margin-top: 2.5em;
+  font-size: 0.75em;
+}
+
+#content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: -8em;
+  margin-left: -16em;
 }
 
-.App-link {
-  color: #61dafb;
+#sw-image {
+  width: 10em;
+  padding-right: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#sw-image img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 660px) {
+  #content {
+    flex-direction: column;
+    margin-left: -10em;
   }
-  to {
-    transform: rotate(360deg);
+
+  #sw-image {
+    margin-left: 5em;
+    width: 10em;
+  }
+
+  #welcome-text {
+    text-align: center;
   }
 }
