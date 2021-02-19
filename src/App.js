@@ -30,7 +30,7 @@ function App() {
           <div id="welcome-text">
             <h1> Hi 👋</h1>
             <h1> I'm Sam Wells</h1>
-            <h2> Backend Software Engineer at <a href={jeUrl}>Just Eat</a></h2>
+            <h2> Backend Software Engineer at <a href={jeUrl}>Just Eat</a> 🍕</h2>
           </div>
         </CSSTransitionGroup>
       </div>
