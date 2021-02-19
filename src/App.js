@@ -2,14 +2,27 @@ import React from 'react';
 import './App.css';
 import { CSSTransitionGroup } from 'react-transition-group'
 import sw from './Images/sw.png';
+import psychadelic from './Video/psych-compat.mp4'
+import psychadelicweb from './Video/psych-compat.webm'
 import SocialMediaDeck from './Components/SocialMedia/SocialMediaDeck';
 
 function App() {
-
   var jeUrl = "https://www.just-eat.co.uk";
-
   return (
     <div className="App">
+      <CSSTransitionGroup
+        transitionName="video"
+        transitionAppear={true}
+        transitionAppearTimeout={5000}
+        transitionEnter={false}
+        transitionLeave={false}>
+        <video id="background-video" loop autoPlay="autoplay">
+          {/* Video for Chrome */}
+          <source src={psychadelic} type="video/mp4"></source>
+          <source src={psychadelicweb} type="video/webm"></source>
+          {/* Video for Safari/Apple */}
+        </video>
+      </CSSTransitionGroup>
       <div id="content">
         <CSSTransitionGroup
           transitionName="welcome-name"
@@ -34,7 +47,7 @@ function App() {
           </div>
         </CSSTransitionGroup>
       </div>
-      <SocialMediaDeck/>
+      <SocialMediaDeck />
     </div>
   );
 }

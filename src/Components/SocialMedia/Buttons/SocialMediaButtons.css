@@ -1,4 +1,11 @@
-.social-media-follow-btn img{
+.social-media-follow-btn img {
     height: 2em;
     margin: 1em;
+}
+
+@media screen and (max-width: 660px) {
+    .social-media-follow-btn img  {
+        height: 1.5em;
+        margin: 0.5em;
+    }
 }

@@ -1,4 +1,6 @@
-#social-media-deck a{
+#social-media-deck {
+    position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
