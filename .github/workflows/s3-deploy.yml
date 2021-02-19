@@ -3,13 +3,25 @@ name: DeployS3
 on:
   # Maintain this as a manual step until we add automated tests
   workflow_dispatch:
+    inputs:
+      git-commit:
+        description: Git commit SHA (Optional)
+        required: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Clone repository (Latest)
+        uses: actions/checkout@v2
+        if: github.event.inputs.git-commit == ''
+      - name: Clone repository (Custom commit)
+        uses: actions/checkout@v2
+        if: github.event.inputs.git-commit != ''
+        with:
+          ref: ${{ github.event.inputs.git-commit }}
+      - name: Install node
+        uses: actions/setup-node@v2
         with:
           node-version: '12'
           check-latest: true
