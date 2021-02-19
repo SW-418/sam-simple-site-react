@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  simplesite:
+    image: sam-simple-site
+    ports:
+      - "8080:80"

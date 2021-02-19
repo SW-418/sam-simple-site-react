@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `docker-compose up`
+
+This will spin up a docker container with the site exposed on port 8080. Navigate to [http://localhost:8080](http://localhost:8080) to view.
+
 In the project directory, you can run:
 
 ### `npm run start`
