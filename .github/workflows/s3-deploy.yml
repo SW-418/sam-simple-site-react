@@ -1,4 +1,4 @@
-name: Deploy Site to S3
+name: DeployS3
 
 on:
   # Maintain this as a manual step until we add automated tests
