@@ -46,7 +46,7 @@ jobs:
     steps:
       - name: Invalidate Cloudfront Distro
         uses: chetan/invalidate-cloudfront-action@master
-        envs:
+        env:
           PATHS_FROM: "*"
           AWS_REGION: ${{ secrets.AWS_REGION }}
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
