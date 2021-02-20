@@ -16,7 +16,7 @@ function App() {
         transitionAppearTimeout={5000}
         transitionEnter={false}
         transitionLeave={false}>
-        <video id="background-video" loop muted autoPlay="autoplay">
+        <video id="background-video" playsinline loop muted autoPlay="autoplay">
           {/* Video for Chrome */}
           <source src={psychadelic} type="video/mp4"></source>
           <source src={psychadelicweb} type="video/webm"></source>
