@@ -16,11 +16,10 @@ function App() {
         transitionAppearTimeout={5000}
         transitionEnter={false}
         transitionLeave={false}>
-        <video id="background-video" playsinline loop muted autoPlay="autoplay">
-          {/* Video for Chrome */}
+        <video id="background-video" playsInline="playsinline" loop muted autoPlay="autoplay">
+          {/* Different formats required for different browsers */}
           <source src={psychadelic} type="video/mp4"></source>
           <source src={psychadelicweb} type="video/webm"></source>
-          {/* Video for Safari/Apple */}
         </video>
       </CSSTransitionGroup>
       <div id="content">
