@@ -7,7 +7,7 @@ import psychadelicweb from './Video/psych-compat.webm'
 import SocialMediaDeck from './Components/SocialMedia/SocialMediaDeck';
 
 function App() {
-  var jeUrl = "https://www.just-eat.co.uk";
+  var companyUrl = "https://www.marshmallow.com/";
   return (
     <div className="App">
       <CSSTransitionGroup
@@ -42,7 +42,7 @@ function App() {
           <div id="welcome-text">
             <h1> Hi 👋</h1>
             <h1> I'm Sam Wells</h1>
-            <h2> Backend Software Engineer at <a href={jeUrl}>Just Eat</a> 👨🏽‍💻🍕</h2>
+            <h2> Backend Software Engineer at <a href={companyUrl} target="_blank" rel="noopener noreferrer">Marshmallow</a> 👨🏽‍💻🚗</h2>
           </div>
         </CSSTransitionGroup>
       </div>
