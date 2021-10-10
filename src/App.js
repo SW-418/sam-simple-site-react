@@ -42,7 +42,7 @@ function App() {
           <div id="welcome-text">
             <h1> Hi 👋</h1>
             <h1> I'm Sam Wells</h1>
-            <h2> Backend Software Engineer at <a href={companyUrl} target="_blank" rel="noopener noreferrer">Marshmallow</a> 👨🏽‍💻🚗</h2>
+            <h2> Backend Software Engineer with 4+ years of experience 👨🏽‍💻</h2>
           </div>
         </CSSTransitionGroup>
       </div>
