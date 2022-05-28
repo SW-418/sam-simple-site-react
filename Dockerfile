@@ -5,5 +5,5 @@ RUN apk add --update npm
 RUN npm install
 RUN npm run build
 
-FROM nginx
+FROM nginx:stable
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
