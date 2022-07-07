@@ -42,7 +42,8 @@ function App() {
           <div id="welcome-text">
             <h1> Hi 👋</h1>
             <h1> I'm Sam Wells</h1>
-            <h2> Backend Software Engineer with 4+ years of experience 👨🏽‍💻</h2>
+            <h2> Backend Software Engineer with 5+ years of experience 👨🏽‍💻</h2>
+            <h2> Currently living in Vancouver, BC, Canada 🇨🇦</h2>
           </div>
         </CSSTransitionGroup>
       </div>
