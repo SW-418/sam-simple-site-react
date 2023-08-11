@@ -30,16 +30,6 @@ a:hover {
   transition-delay: 1s;
 }
 
-.video-appear {
-  opacity: 0.001;
-}
-
-.video-appear.video-appear-active {
-  opacity: 1;
-  transition: opacity 1.5s ease-in;
-  transition-delay: 1s;
-}
-
 #welcome-text {
   font-size: 0.75em;
 }
@@ -57,7 +47,8 @@ a:hover {
 
 #sw-image {
   width: 10em;
-  padding-right: 5em;
+  padding-right: 3em;
+  padding-top: 1em;
 }
 
 #sw-image img {
@@ -76,11 +67,11 @@ a:hover {
 @media screen and (max-width: 660px) {
   #content {
     flex-direction: column;
-    margin-left: -10em;
+    margin-left: -8em;
   }
 
   #sw-image {
-    margin-left: 5.5em;
+    margin-left: 3.25em;
     width: 10em;
   }
 
