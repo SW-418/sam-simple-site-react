@@ -21,7 +21,7 @@ jobs:
         with:
           ref: ${{ github.event.inputs.git-commit }}
       - name: Install node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '16'
           check-latest: true
