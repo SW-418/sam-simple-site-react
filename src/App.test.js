@@ -14,4 +14,3 @@ test('Renders Name message', () => {
   const linkElement = getByText(/I'm Sam Wells/i);
   expect(linkElement).toBeInTheDocument();
 });
-
