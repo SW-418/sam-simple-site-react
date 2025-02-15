@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository (Latest)
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         if: github.event.inputs.git-commit == ''
       - name: Clone repository (Custom commit)
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         if: github.event.inputs.git-commit != ''
         with:
           ref: ${{ github.event.inputs.git-commit }}
