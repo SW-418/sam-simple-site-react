@@ -30,7 +30,7 @@ jobs:
       - name: Run npm run build script
         run: CI='' npm run build
       - name: Upload build artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: sam-simple-site-artifact
           path: build
