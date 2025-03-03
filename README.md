@@ -1,3 +1,5 @@
+# This version has been deprecated - [simple-site](https://github.com/SW-418/simple-site) is the new version
+
 # sam-simple-site-react
 
 Basic website created in React - Nothing special 😉
